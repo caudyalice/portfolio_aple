@@ -1,0 +1,115 @@
+header {
+    position:relative;
+    background-image: url("../img/Visage paysage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color:grey;
+    box-shadow: inset 10px 20px 50px black;
+}
+
+
+#btn_play{
+	padding-left: 15px;	
+}
+
+#btn_sound{
+	padding-left: 15px;
+}
+
+.content{
+    /*width:auto;*/
+    /*max-height:100%;*/
+    height:var(--height-section);
+    display:flex;
+    flex-direction : column;
+    justify-content : center;
+    /*padding: 0px var(--padding-left);*/
+    margin: 0px 10%;
+    align-items: center;
+    background-color: rgba(64, 64, 64, 0.5);
+}
+
+/*video {
+ width:100%;
+ height:auto;
+ top:0;
+ background-color: black;
+ background-position: center center;
+ background-size: cover;
+}
+
+.menu-play {
+  padding : var(--pad-nav);
+  display : flex;
+  justify-content : center;
+}*/
+
+.content > .title {
+  padding: 0px 50px;
+  margin : var(--pad-nav);
+  border : 3px solid white;
+  border-radius: 7px;
+  font-family : 'Prometheus';
+  text-align : center;
+  color:white;
+  font-size:  var(--title-size);
+  text-shadow: var(--turquoise-color) 0px 6 1px;
+  max-width:100%;
+}
+
+.name
+{
+    padding : 0px 50px;
+    font-family : 'OuterSpace';
+    font-size : var(--title-size);
+    color:white;
+    text-align:center;
+}
+
+.content > img {
+	width:300px;
+	height:auto;
+}
+
+
+.menu-play button {
+  padding: 30px 30px;
+  border: none;
+  margin: 10px;
+}
+
+.content > .description{
+    text-align:center;
+    vertical-align: middle;
+    color: var(--white-color);
+    font-family: 'Poiret One';
+    font-size: var(--text-menu-size);
+    margin : var(--pad-nav);
+}
+
+@media screen and (max-width: 1600px) {
+  .content img {
+	width:200px;
+	height:auto;
+  }
+  .content > .title, .name {
+    font-size:  var(--title-size-tablet);
+  }
+  .content > .description {
+      font-size: var(--text-size-tablet);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content img {
+	width:100px;
+	height:auto;
+  }
+  .content > .title, .name {
+    font-size:  var(--title-size-phone);
+  }
+  .content > .description {
+      font-size: var(--text-size-phone);
+  }
+}

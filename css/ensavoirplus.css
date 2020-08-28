@@ -1,0 +1,14 @@
+.Ensavoirplus{
+	background-color: rgba(175,214,243,0.8);
+	color: rgb(18,27,36);
+	border-radius: 30px;
+	padding: 20px;
+	font-family: "Poiret One";
+	font-size: 1.2em
+}
+
+.Ensavoirplus > h2{
+	text-shadow: 3px 3px white;
+}
+
+

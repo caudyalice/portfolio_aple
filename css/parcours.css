@@ -1,0 +1,111 @@
+#Monparcours{
+	background-color: var(--black-color);
+	display:flex;
+	flex-direction:row;
+    flex-wrap:wrap;
+	justify-content:space-around;
+    align-items: flex-start;
+	font-family: "Poiret One";
+	color:white;
+	min-height:0px;
+}
+
+#Monparcours > h2{
+    color:var(--turquoise-color);
+    text-shadow: 2px 2px 2px var(--blue-color);
+    font-style: normal;
+    font-weight: normal;
+}
+
+#Monparcours > article > h3{
+    color:var(--turquoise-color);
+    font-style: normal;
+    font-weight: normal;
+    text-shadow: 2px 2px 2px var(--blue-color);
+}
+
+#Monparcours > article {
+	display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    font-size: var(--text-size);
+}
+
+#Monparcours > article > div {
+	display:flex;
+    flex-direction:row;
+    /*align-items:baseline;
+    justify-content:center;*/
+    align-items: flex-start;
+}
+
+.date {
+	width:90px;
+	text-align:right;
+	color: var(--turquoise-color);
+	text-shadow: 2px 2px 2px var(--blue-color);
+	/*font-size : calc(var(--subtitle-size) - 5px);*/
+}
+
+#Monparcours > article > div > div {
+	display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#Monparcours > article > div > div > svg {
+	margin-left:20px;
+    margin-right:20px;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+
+#Monparcours > article > div > * {
+	/*height:130px;*/
+}
+
+.Ellipse_1 {
+    overflow: visible;
+    fill: var(--turquoise-color);
+    text-align:center;
+}
+
+.parcours_description, .parcours_description > span {
+    width:400px;
+    max-height: 128px;
+}
+
+.parcours_lieu {
+    color : var(--turquoise-color);
+}
+
+.Ligne_1 {
+    overflow: visible;
+    width: 2px;
+    height: 80px;
+    transform: matrix(1,0,0,1,0,0);
+    fill: var(--white-color);
+}
+
+@media screen and (max-width: 1600px) {
+    .parcours_description, .parcours_description > span {
+        width:300px;
+    }
+    .date {
+        width:70px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .parcours_description, .parcours_description > span {
+        width:200px;
+    }
+    .date{
+        width:50px;
+    }
+    #Monparcours{
+        flex-direction:column;
+        align-items:center;
+    }
+}

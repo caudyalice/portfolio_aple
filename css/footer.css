@@ -1,0 +1,91 @@
+.fa {
+    text-decoration : none;
+    font-size:30px;
+}
+
+.fa-linkedin,.fa-twitter, .fa-google {
+  color: white;
+}
+
+footer::before {
+    margin-bottom:calc(100vh - var(--height-section));
+}
+
+/* Style the top navigation bar */
+.navbar {
+  position : fixed;
+  left: 0;
+  bottom: 0;
+  background-color: var(--grey-color);
+  text-align:center;
+  z-index: 100;
+}
+
+.navmargin{
+    margin : 0px 10%;
+    padding: 0px 10px;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    align-items:center;
+    flex-direction:row;
+}
+
+.nav {
+    display:flex;
+    height: 100%;
+    align-items: center;
+}
+
+.link {
+    display:flex;
+    height: 100%;
+    align-items: center;
+}
+
+.link > :first-child, .nav > :first-child { margin-left: 0;}
+.link > :last-child, .nav > :last-child { margin-right: 0;}
+
+
+.nav a {
+  color: var(--white-color);
+  text-decoration: none;
+  margin-right: 30px;
+  font-family: 'Poiret One';
+  font-size : var(--text-menu-size);
+}
+
+
+.nav a:hover {
+  color: var(--turquoise-color);
+  text-shadow: 0 0 6px var(--turquoise-color);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1600px) {
+  .navmargin {
+      justify-content:center;
+      flex-direction:column;
+  }
+  .nav a {
+    font-size : var(--text-menu-size-tablet);
+  }
+  .fa-linkedin,.fa-twitter, .fa-google {
+    font-size:  var(--icon-menu-size-tablet);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navmargin, .nav{   
+    flex-direction: column;
+  }
+  .nav a {
+    font-size : var(--text-menu-size-phone);
+    margin-right:0px;
+  }
+  .fa-linkedin,.fa-twitter, .fa-google {
+    font-size: var(--icon-menu-size-phone);
+  }
+}
+

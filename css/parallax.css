@@ -1,0 +1,130 @@
+bo * {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+
+body {
+  margin: 0;
+}
+
+.blank {
+    height: calc(100vh - var(--height-section));
+}
+
+:root {
+    --grey-color:#404040;
+    --white-color: #F2F2F2;
+    --turquoise-color: #73D9D9;
+	--blue-color:#192359;
+	--black-color:#0D0B0D;
+    --padding-left:10%;
+    --pad-nav: 25px 30px;
+    --title-size:40px;
+    --title-size-tablet:35px;
+    --title-size-phone:25px;
+    --subtitle-size:25px;
+    --subtitle-size-tablet: 1.3em;
+    --subtitle-size-phone: 1em;
+    --text-size:18px;
+    --text-size-tablet:15px;
+    --text-size-phone:12px;
+    --text-menu-size:18px;
+    --text-menu-size-tablet:15px;
+    --text-menu-size-phone:12px;
+    --icon-menu-size:30px;
+    --icon-menu-size-tablet:20px;
+    --icon-menu-size-phone:18px;
+    --size-tablet:1600px;
+    --size-phone:800px;
+    --height-section:85vh;
+}
+
+section {
+ max-width:100vw;
+}
+
+.secondsection {
+ padding: 0 var(--padding-left);
+ min-height:var(--height-section);
+ max-width:100vw;
+ background-color: var(--black-color);
+}
+
+.secondsection > section {
+    padding: var(--pad-nav);
+}
+
+header {
+ min-height:var(--height-section);
+ max-width:100vw;
+}
+
+footer {
+ height: calc(100vh - var(--height-section));
+ width:100%;
+}
+
+section > article > h3 {
+ width:100%;
+ text-align:center;
+ font-size: var(--subtitle-size);
+}
+
+section > article {
+    margin-bottom: 2em;
+}
+
+section > h2 {
+ width: 100%;
+ text-align: center;
+ font-size: 2.1em;
+}
+
+@font-face {
+font-family: 'Poiret One';
+src:
+    local('PoiretOne'),
+    local('PoiretOne-Regular'),
+    url('../police/PoiretOne-Regular.ttf');
+}
+
+@font-face {
+font-family: 'Prometheus';
+src:
+    local('Prometheus')
+    url('../police/Prometheus.ttf');
+}
+
+@font-face {
+font-family: 'OuterSpace';
+src:
+    local('Outerspace Militia'),
+    local('Outerspace'),
+    url('../police/Outerspace.ttf');
+}
+
+@media screen and (max-width: 1600px) {
+    section > h2 {
+        font-size: 1.8em;
+    }
+    section > article > div {
+        font-size: var(--text-size-tablet);
+    }
+    section > article > h3 {
+        font-size: var(--subtitle-size-tablet);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section > h2 {
+        font-size: 1.5em;
+    }
+    section > article > div {
+        font-size: var(--text-size-phone);
+    }
+    section > article >h3 {
+        font-size: var(--subtitle-size-phone);
+    }
+}
+

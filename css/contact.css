@@ -1,0 +1,20 @@
+#envoyer{
+	background-color: rgb(175,214,243);
+	font-size: 0.7em;
+}
+
+#Mecontacter{
+	color: rgb(220,220,220); 
+	font-size: 1.4em;
+	font-family: "Poiret One";
+	font-weight: bold;
+}
+
+.field{
+	margin-bottom: 2%;
+}
+
+.legendtaille{
+	font-size: 1.8em;
+	text-align: center;
+}

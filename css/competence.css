@@ -1,0 +1,120 @@
+.etoile{
+	background-color: rgba(175,214,243,0.8);
+	border-radius: 30px;
+	padding: 20px;
+	font-family: "Poiret One";
+	font-size: 1.2em;
+	color: rgb(18,27,36);
+}
+
+.img {
+	width: 40%;
+}
+
+.intitule {
+	/*width: 40%;*/
+}
+
+.taille{
+	height:31px;
+	width:auto;
+}
+
+.etoile > h2{
+	text-shadow: 3px 3px white;
+}
+
+.intitule2{
+	/*width: 20%;*/
+	vertical-align: top;
+}
+
+.description1{
+	width: 60%;
+	vertical-align: top;	
+}
+
+#Mescompetences {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: "Poiret One";
+    color: white;
+    min-height: 0px;
+}
+
+#Mescompetences > article {
+    text-align:center;
+    display: flex;
+    flex:33%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-size);
+    padding: 2px;
+}
+
+#Mescompetences > article > div {
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#Mescompetences > article > div > * {
+    padding:2px;
+}
+
+
+#Mescompetences > article > div > h3 {
+    color: var(--turquoise-color);
+    font-style: normal;
+    font-weight: normal;
+    text-shadow: 2px 2px 2px var(--blue-color);
+    text-align: center;
+    font-size: var(--subtitle-size);
+}
+
+
+#Mescompetences > h2 {
+    width:100%;
+    color: var(--turquoise-color);
+    text-shadow: 2px 2px 2px var(--blue-color);
+    font-style: normal;
+    font-weight: normal;
+    text-align:center;
+}
+
+@media screen and (max-width: 1600px)
+{
+    #Mescompetences > article > span {
+    font-size: var(--text-size-tablet);
+    }
+    #Mescompetences > article > div > h3 {
+        font-size: var(--subtitle-size-tablet);
+    }
+     .taille{
+    	height:20px;
+    }
+}
+
+
+@media screen and (max-width: 700px)
+{
+    #Mescompetences > article > span {
+        font-size: var(--text-size-phone);
+    }
+    #Mescompetences > article > div > h3 {
+        font-size: var(--subtitle-size-phone);
+    }
+    .taille{
+    	height:15px;
+    }
+}
+
+
+
+
+
